@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cred-bg: #070b16;
+  --color-cred-sidebar: #0a1020;
+  --color-cred-card: #10182a;
+  --color-cred-card-hover: #141e34;
+  --color-cred-elevated: #162038;
+  --color-cred-border: #1e2a44;
+  --color-cred-border-strong: #2a3a5c;
+  --color-cred-muted: #8b95ad;
+  --color-cred-text: #f4f7ff;
+  --color-cred-accent: #7c5cff;
+  --color-cred-accent-hover: #8f74ff;
+  --color-cred-accent-soft: #7c5cff26;
+  --color-cred-success: #34d399;
+  --color-cred-warning: #fbbf24;
+  --color-cred-danger: #f87171;
+  --color-cred-info: #60a5fa;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  html.light {
+    color-scheme: light;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background: var(--color-cred-bg);
+    color: var(--color-cred-text);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html.light {
+    --color-cred-bg: #eef1f8;
+    --color-cred-sidebar: #f7f8fc;
+    --color-cred-card: #ffffff;
+    --color-cred-card-hover: #f3f5fb;
+    --color-cred-elevated: #ffffff;
+    --color-cred-border: #d7deee;
+    --color-cred-border-strong: #c3ccdf;
+    --color-cred-muted: #5b657c;
+    --color-cred-text: #12182a;
+    --color-cred-accent-soft: #7c5cff1a;
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-cred-accent);
+    outline-offset: 2px;
+  }
+}
+
+@utility card-surface {
+  background-color: var(--color-cred-card);
+  border: 1px solid var(--color-cred-border);
+  border-radius: 1rem;
+}
+
+@utility text-muted {
+  color: var(--color-cred-muted);
+}

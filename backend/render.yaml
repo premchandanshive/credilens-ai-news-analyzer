@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: credilens-backend
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt && python ml/training/train_baselines.py
+    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: APP_NAME
+        value: CrediLens
+      - key: FRONTEND_ORIGINS
+        value: "*"
+      - key: JWT_SECRET
+        generateValue: true

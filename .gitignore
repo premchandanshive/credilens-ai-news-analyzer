@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+frontend/node_modules/
+frontend/dist/
+backend/.venv/
+backend/__pycache__/
+ml/saved_models/*
+!ml/saved_models/README.md
+ml/datasets/*
+!ml/datasets/README.md
+!ml/datasets/sample*
