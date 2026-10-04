@@ -2,6 +2,9 @@
 CrediLens — Main FastAPI Application
 AI-Powered Misinformation and Fake News Credibility Analyzer
 """
+from fastapi import FastAPI
+
+app = FastAPI()
 
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, status
