@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CrediLens — AI-Powered Misinformation and Fake News Credibility Analyzer
 
 ![CrediLens Dashboard Reference](docs/ui_preview.png)
@@ -112,3 +113,7 @@ cd frontend && npm run build
 ## 6. Scientific Disclaimer
 
 > This assessment estimates credibility using AI classification, evidence retrieval, source analysis, and linguistic signals. It is not a determination of absolute truth.
+=======
+# credilens-ai-news-analyzer
+AI-powered news credibility analyzer that uses NLP, machine learning, and source analysis to detect potential misinformation and provide explainable credibility scores.
+>>>>>>> b81cb1203979fa4da5a942c5ae593c7fa4d02dd6
